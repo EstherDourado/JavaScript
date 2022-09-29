@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aprendendo DOM </title>
+    <style>
+        body {
+            background-color: rgb(128, 201, 223);
+            color: cornsilk;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai ser o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id = "msg"> Clique em mim</div>
+    <Script>
+        //window.document.write(window.navigator.appName)
+        //selecionando elementos com DOM
+        var corpo = window.document.body 
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        //innerText é o texto que esta dentro da tag P
+        /*v
+        ar d = window.document.getElementById('msg')
+        d.style.background = 'purple'
+        d.innerText = "Estou aguardando..." */
+        p1.style.color='blue'
+        document.white(p1.innerText)
+        var d = window.document.getElementsByName('msg')[0]
+        d. innerText = 'Olá'
+
+        var d = window.document.querySelector('div#msg') 
+        /*
+        toda div é representada por uma #, toda classe é representada por um ponto (.)
+        */
+        d.style.color = 'Green'
+    </Script>
+</body>
+</html>
